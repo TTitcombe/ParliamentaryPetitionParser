@@ -16,4 +16,8 @@ See requirements.txt for a list of python packages this code depends on.
 3. Find the path to the directory to which you would like data to be saved, *relative to the top-level* **ParliamentaryPetitionParser** *directory*. This defaults to **data/**.
 4. In the **ParliamentaryPetitionParser** directory, run `python -m src.ppp --petition_number=NUM --output_dir=DIR`, 
 where NUM is the petition number and DIR is the save directory.
-5. Check your output directory location. You will have two file: **constituency.csv** and **country.csv**.
+5. Check your output directory location. You will have two file: **constituency** and **country**, which
+are prefixed by year_month_day_hour_minute_ and suffixed by the petition number.
+
+You can also set **ParliamentrayPetitionParser** to collect data every X minutes. To do this, run
+`python -m src.ppp --petition_number=NUM --output_dir=DIR --frequency=X`
