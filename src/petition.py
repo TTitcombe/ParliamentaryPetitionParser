@@ -96,4 +96,4 @@ if __name__ == "__main__":
 
     args = parser.parse_args()
 
-    petition = PPP(args.petition_number, args.output_dir, args.frequency)
+    ppp = PPP(args.petition_number, args.output_dir, args.frequency)
